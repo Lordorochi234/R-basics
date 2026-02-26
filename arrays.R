@@ -27,3 +27,19 @@ multiarray[,c(2),2]
 
 #A comma (,) after c() means that we want to access the row.
 # arrays git 
+
+# %in% check if an item exists
+23 %in% multiarray
+# TRUE
+
+# dim() function to find the amount of rows and cols in an array
+dim(multiarray)
+
+# length() to find the dimension of an array
+length(multiarray)
+# 24
+
+# loop through an array
+for (x in multiarray){
+  print(x)
+}
