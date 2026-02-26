@@ -26,3 +26,4 @@ multiarray[,c(2),2]
 #A comma (,) before c() means that we want to access the column.
 
 #A comma (,) after c() means that we want to access the row.
+# arrays git 
