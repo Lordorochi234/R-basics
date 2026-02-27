@@ -19,3 +19,4 @@ music_genre[2]
 music_genre[2] <- "Pop"
 music_genre[2]
 #trying to change a value for an item that doesn't exits creates an error
+#creating another branch in git to work with levels and changing items in a factor
