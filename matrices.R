@@ -4,6 +4,10 @@
 thisMatrix <- matrix(c(1,2,3,4,5,6), nrow = 2, ncol = 3)
 thisMatrix # creates a 2 row 3 col matrix
 
+#creating matrix
+this_matrix <- matrix(c(209, 48, 89, 39, 58, 85, 44, 2000, 3994, 444, 2, 4), nrow = 4)
+this_matrix[1, 2]
+
 thisMatrix1 <- matrix(c(1,2,3,4,5,6,7,8,9), nrow = 3, ncol = 3)
 thisMatrix1 #creates a 3 by 3 matrix
 
@@ -13,14 +17,19 @@ thisMatrix1[1,2]
 
 #the whole row can be accessed if you specify a comma before the number in the bracket
 thisMatrix1[3,]  
+this_matrix[,3]
 
 #more than one row can be accessed if you use the c() function
 #row 1 and 2
 thisMatrix[c(1,2),]
+this_matrix[,c(2,3)]
 
 # cbind() Add additions cols in a Matrix
 newMatrix1 <- cbind(thisMatrix1, c(20, 60, 50))
 newMatrix1
+cbind(this_matrix, c(93, 65, 38,5))
+this_matrix
+
 
 #rbind() add additional rows in a matrix
 newmatrix2 <- rbind(thisMatrix1, c(730, 320, 43))
@@ -31,12 +40,16 @@ newmatrix2
 removematrix <- thisMatrix1[-c(1), -c(1)]
 removematrix
 
+this_matrix[-c(1), -c(1)]
+
 # %in% to check if an item is present in a matrix
 5 %in% thisMatrix
 # TRUE
 
 #dim() to find the no. of rows and columns in Matrix
 dim(thisMatrix)
+dim(this_matrix)
+
 
 #Matrix length
 length(thisMatrix)
@@ -48,6 +61,7 @@ for(rows in 1:nrow(thisMatrix1)) {
     print(thisMatrix1[rows,columns])
   }
 }
+
 
 #combine two matrices
 #you can use the rbind() or cbind() to combine two or more matrices
